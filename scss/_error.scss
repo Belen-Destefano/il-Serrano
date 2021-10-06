@@ -1,0 +1,89 @@
+/*PAGE ERROR*/
+.headerError{
+    background-image: url(../images/portadaerror.jpg);
+    
+}
+
+section {
+    .h2Error {
+        margin: 60px 68px;
+    }
+}
+
+
+.errorFlex{ 
+    display: flex;
+    flex-direction: row;
+
+    .pageError {
+        position: relative;
+
+        a{
+            .volver {
+                color: lemonchiffon;
+                position: absolute;
+                bottom: 132px;
+                left: 270px;
+                text-align : center;
+                letter-spacing: 5px;
+
+                z-index: 2;
+
+                font-size: 60px;
+                font-weight: 500 ;
+            }
+
+            .volver:hover {
+                font-size: 65px;
+            }
+
+            section {
+                
+                width: 23em;
+                height: 6em;
+                margin-bottom: 8em;
+                margin-left: 14em;
+                border-radius: 51px;
+                padding: 3px;
+                background-color: #000000bd ;
+                
+
+                z-index: 1;
+
+                position: absolute;/*tmb  su relative .sectionexcursiones*/
+                bottom: 4px;
+            }
+
+            
+
+        
+        }
+
+        .imgError {
+            margin-left: 20px;
+        
+            padding: 0px;
+            border-radius: 10px;    
+            width: 50em; 
+            height: 30em;
+        }
+    }
+
+    section{
+        margin: 16px 41px;
+        h2{
+            margin: 52px 9px;
+            width: 11em;
+
+            font-family: monospace;
+        }
+
+        img {
+            width: 5em;
+            height: 5em;
+        }
+    }
+
+    
+
+}

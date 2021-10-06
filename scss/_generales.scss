@@ -1,0 +1,58 @@
+/*HEADER*/
+
+
+.header {
+
+    height: 62vh;
+    background-color: #2E2318;/* fondo por si la imagen no carga*/
+    background-image: url(../images/portada.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+
+    position: relative;
+    
+
+    section {
+
+        nav {
+            div {
+                img {
+                    width: 6em;
+                    height: 5em;
+                }
+            } 
+
+
+        
+        }
+        
+       
+
+    }
+
+}
+
+
+/*FOOTER*/
+
+#footer {
+    padding-top: 20px;
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #redes {
+        display: inline-block;
+        
+
+        a{
+            img{
+                width: 40px;
+            }
+        }
+    }
+}

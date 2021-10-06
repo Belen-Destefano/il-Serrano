@@ -1,0 +1,47 @@
+//VARIABLES para #margen//
+$margenarriba: 70px;
+$margenizq: 20px;
+
+$margenabajo: 70px;
+
+//MIXINS para imagen clima y balnearios//
+$ancho: 25em;
+$alto: 15em;
+
+@mixin imgCyB($width, $height) {
+    height: $alto;
+    width: $ancho;
+}
+
+.imgClimaybalnearios {
+    @include imgCyB (15em, 25em);
+}
+ 
+  
+/*FOR tamaño de los titulos*/
+
+@for $i from 1 through 3 {
+
+    h#{$i} {
+  
+      font-size: 2em * (2 / $i);
+  
+    }
+  
+}
+
+/*MAPS PALETA COLORES */
+
+$lista-colores: (
+    blanco: #ffffff,
+    bordo: #551400, 
+    gris: #66593f, 
+    naranja: #e77e01,
+);
+
+@each $colores, $color in $lista-colores {
+
+    .#{$colores} {
+        color: $color;
+    }
+}

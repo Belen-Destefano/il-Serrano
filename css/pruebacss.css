@@ -1,0 +1,577 @@
+@charset "UTF-8";
+.imgClimaybalnearios {
+  height: 15em;
+  width: 25em; }
+
+/*FOR tamaño de los titulos*/
+h1 {
+  font-size: 4em; }
+
+h2 {
+  font-size: 2em; }
+
+h3 {
+  font-size: 1.33333em; }
+
+/*MAPS PALETA COLORES */
+.blanco {
+  color: #ffffff; }
+
+.bordo {
+  color: #551400; }
+
+.gris {
+  color: #66593f; }
+
+.naranja {
+  color: #e77e01; }
+
+/*HEADER*/
+.header {
+  height: 62vh;
+  background-color: #2E2318;
+  /* fondo por si la imagen no carga*/
+  background-image: url(../images/portada.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  .header section nav div img {
+    width: 6em;
+    height: 5em; }
+
+/*FOOTER*/
+#footer {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #footer #redes {
+    display: inline-block; }
+    #footer #redes a img {
+      width: 40px; }
+
+/*PAGE ERROR*/
+.headerError {
+  background-image: url(../images/portadaerror.jpg); }
+
+section .h2Error {
+  margin: 60px 68px; }
+
+.errorFlex {
+  display: flex;
+  flex-direction: row; }
+  .errorFlex .pageError {
+    position: relative; }
+    .errorFlex .pageError a .volver {
+      color: lemonchiffon;
+      position: absolute;
+      bottom: 132px;
+      left: 270px;
+      text-align: center;
+      letter-spacing: 5px;
+      z-index: 2;
+      font-size: 60px;
+      font-weight: 500; }
+    .errorFlex .pageError a .volver:hover {
+      font-size: 65px; }
+    .errorFlex .pageError a section {
+      width: 23em;
+      height: 6em;
+      margin-bottom: 8em;
+      margin-left: 14em;
+      border-radius: 51px;
+      padding: 3px;
+      background-color: #000000bd;
+      z-index: 1;
+      position: absolute;
+      /*tmb  su relative .sectionexcursiones*/
+      bottom: 4px; }
+    .errorFlex .pageError .imgError {
+      margin-left: 20px;
+      padding: 0px;
+      border-radius: 10px;
+      width: 50em;
+      height: 30em; }
+  .errorFlex section {
+    margin: 16px 41px; }
+    .errorFlex section h2 {
+      margin: 52px 9px;
+      width: 11em;
+      font-family: monospace; }
+    .errorFlex section img {
+      width: 5em;
+      height: 5em; }
+
+.titulosH1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500em;
+  margin-top: 1em;
+  padding-top: 195px;
+  text-align: center; }
+
+.titulosH2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-align: left; }
+
+.titulosh3B {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-family: 'Roboto', sans-serif;
+  color: #551400;
+  font-size: 2em;
+  font-style: italic;
+  font-weight: 500;
+  padding-left: 20px;
+  width: 9em;
+  justify-content: end;
+  background: linear-gradient(131deg, #fcfcfc 3%, #ededed 15%, rgba(213, 213, 213, 0.616684) 82%, white 100%); }
+
+.titulosH3 {
+  color: #66593f;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 550;
+  font-style: italic;
+  text-align: left;
+  text-transform: uppercase; }
+
+#margen {
+  margin-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+/*PAGE HOME*/
+/*declarando grid area*/
+#header {
+  grid-area: header; }
+
+#main {
+  grid-area: main; }
+
+#aside {
+  grid-area: aside; }
+
+#table {
+  grid-area: table; }
+
+/*grid container*/
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  grid-template-areas: "main main main" "table table aside"; }
+
+.sectionexcursionesPadre {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .sectionexcursionesPadre .sectionExcursiones {
+    padding: 12px;
+    position: relative; }
+    .sectionexcursionesPadre .sectionExcursiones a h3 {
+      color: lemonchiffon;
+      position: absolute;
+      bottom: 25px;
+      left: 22px;
+      text-align: center;
+      letter-spacing: 5px;
+      z-index: 2;
+      font-size: 40px;
+      font-weight: 500; }
+    .sectionexcursionesPadre .sectionExcursiones a h3:hover {
+      font-size: 43px;
+      font-weight: 500; }
+    .sectionexcursionesPadre .sectionExcursiones a section {
+      width: 368px;
+      height: 35px;
+      margin-bottom: 23px;
+      padding: 3px;
+      background-color: #e77e0185;
+      z-index: 1;
+      position: absolute;
+      /*tmb  su relative .sectionexcursiones*/
+      bottom: 4px; }
+    .sectionexcursionesPadre .sectionExcursiones .imgExcursionsombra {
+      border-radius: 10px;
+      width: 23em;
+      height: 15em;
+      box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.425); }
+
+#sectionTable {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 20px; }
+  #sectionTable caption {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1,7em;
+    font-weight: 500;
+    font-style: italic;
+    caption-side: bottom;
+    color: #66593f;
+    text-align: right;
+    letter-spacing: 1px; }
+  #sectionTable thead tr th {
+    color: #551400; }
+  #sectionTable tbody tr td {
+    background-color: #e0e0e087;
+    width: 10em;
+    text-align: center; }
+    #sectionTable tbody tr td ul {
+      width: 24em;
+      margin-left: 2em; }
+      #sectionTable tbody tr td ul li {
+        color: #e77e01;
+        text-align: left;
+        margin-top: 10px;
+        margin-bottom: 10px; }
+
+aside {
+  justify-self: center;
+  margin-top: 60px;
+  width: 20em;
+  height: 45em; }
+  aside section h3 {
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25em;
+    font-weight: 550;
+    font-style: italic;
+    text-align: left;
+    text-transform: uppercase; }
+  aside section ul li a {
+    color: #551400; }
+
+/*PAGE TURISMO*/
+.card:hover {
+  background-color: rgba(56, 56, 56, 0.048);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.116); }
+
+.sectionTurismo {
+  margin-top: 70px;
+  background-color: whitesmoke; }
+  .sectionTurismo section {
+    padding: 26px 0px; }
+    .sectionTurismo section .paseos {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .sectionTurismo section .paseos div {
+        margin-bottom: 30px; }
+        .sectionTurismo section .paseos div img {
+          border-radius: 10px;
+          width: 368px;
+          height: 240px; }
+        .sectionTurismo section .paseos div img:hover {
+          box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.425); }
+        .sectionTurismo section .paseos div p {
+          width: 23em;
+          margin-top: 20px; }
+
+/*PAGE BALNEARIOS*/
+.imgClimaybalnearios:hover {
+  width: 24em;
+  height: 17em; }
+
+section div .listaBalnearios {
+  padding: 19px 81px;
+  margin: 0px 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start; }
+  section div .listaBalnearios li {
+    list-style-type: circle;
+    width: 236px;
+    height: 100px; }
+    section div .listaBalnearios li h3 {
+      color: #551400;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1,7em;
+      font-weight: 500;
+      font-style: italic;
+      text-align: left; }
+    section div .listaBalnearios li a {
+      color: #e77e01; }
+
+/*PAGE CLIMA*/
+.galeriaImagenes {
+  padding: 26px 70px;
+  margin: 0px 0px;
+  height: 300px; }
+
+#climaFlex {
+  display: flex;
+  flex-direction: column; }
+
+#microclima {
+  animation-name: microclimaAnimacion;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  height: 50px; }
+
+/*ANIMACION DE H2*/
+@keyframes microclimaAnimacion {
+  0% {
+    color: #551400;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: left; }
+  20% {
+    font-size: 34px;
+    font-weight: 450;
+    color: #6d4a09; }
+  40% {
+    font-size: 36px;
+    font-weight: 450;
+    color: #e77e01; }
+  60% {
+    font-size: 34px;
+    font-weight: 450;
+    color: #6d4a09; }
+  100% {
+    font-size: 32px;
+    font-weight: 450;
+    color: #551400; } }
+
+/*PAGE BLOG*/
+.container {
+  margin-top: 25px;
+  margin-bottom: 40px; }
+
+.fondoBlog {
+  background-color: whitesmoke; }
+
+#articulosFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+article {
+  width: 850px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  article div h2 {
+    text-align: center;
+    width: 25em; }
+  article div .imgBlog {
+    padding: 0px;
+    border-radius: 10px;
+    width: 50em;
+    height: 30em; }
+  article div .imgBlog:hover {
+    border: 3px solid #e77e01; }
+  article div p {
+    text-align: center;
+    width: 50em; }
+
+/*PAGE CONTACTO*/
+#contactoFlex {
+  display: flex;
+  flex-direction: column; }
+
+#interesado {
+  color: #e77e01; }
+
+fieldset {
+  /*gradiente*/
+  background: white;
+  background: linear-gradient(82deg, white 0%, rgba(140, 146, 147, 0.286152) 100%);
+  box-shadow: -2px 5px 11px rgba(0, 0, 0, 0.425);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  margin-bottom: 31px; }
+  fieldset legend {
+    margin-top: 30px;
+    margin-bottom: 50px; }
+  fieldset form {
+    margin-top: 30px;
+    margin-bottom: 20px; }
+
+/*RESPONSIVE 360PX */
+@media only screen and (max-width: 360px) {
+  /* GENERALES*/
+  .header {
+    height: 45vh; }
+  #margen {
+    margin-top: 40px;
+    margin-left: 0px; }
+  #body {
+    width: 100%;
+    background-color: whitesmoke; }
+  main {
+    width: 360px; }
+  .titulosH1 {
+    font-size: 2em; }
+  .titulosH2 {
+    font-size: 18px;
+    width: 311px;
+    margin: 3px; }
+  .titulosh3B {
+    margin-bottom: 1px;
+    margin-top: 55px;
+    font-size: 26px; }
+  .titulosH3 {
+    font-size: 1.25em; }
+  #footer {
+    background-color: #e7e7e7;
+    box-shadow: 0px -5px #74726c24;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 11em; }
+    #footer #redes {
+      display: inline-block;
+      width: 81px; }
+      #footer #redes a img {
+        width: 38px; }
+    #footer p {
+      font-size: 12px;
+      margin-bottom: 3em; }
+  /*HOME*/
+  #main {
+    grid-area: main; }
+  #aside {
+    grid-area: aside; }
+  .gridContainer {
+    margin-left: 0px;
+    padding-left: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: "main" "aside"; }
+  #table {
+    display: none; }
+  #asideImagen {
+    display: none; }
+  #botonSubir {
+    display: none; }
+  #main section div p {
+    display: none; }
+  #main .sectionexcursionesPadre {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    #main .sectionexcursionesPadre .sectionExcursiones {
+      width: 322px;
+      padding: 9px;
+      position: relative; }
+      #main .sectionexcursionesPadre .sectionExcursiones a h3 {
+        font-size: 27px; }
+      #main .sectionexcursionesPadre .sectionExcursiones a h3:hover {
+        font-size: 31px; }
+      #main .sectionexcursionesPadre .sectionExcursiones a section {
+        width: 305px;
+        height: 48px; }
+      #main .sectionexcursionesPadre .sectionExcursiones .imgExcursionsombra {
+        width: 19em;
+        height: 12em;
+        margin-left: 0em; }
+  #aside {
+    margin-top: 23px;
+    margin-bottom: 0em;
+    height: 20em; }
+    #aside section {
+      margin-bottom: 68px; }
+      #aside section h3 {
+        font-size: 20px; }
+      #aside section form label {
+        display: none; }
+      #aside section form input {
+        height: 2em;
+        width: 13em;
+        font-size: 20px; }
+      #aside section p {
+        display: none; }
+    #aside section {
+      margin-bottom: 68px; }
+      #aside section h3 {
+        font-size: 20px; }
+      #aside section p {
+        display: none; }
+      #aside section ul li {
+        font-size: 21px; }
+        #aside section ul li a {
+          text-decoration: none; }
+  /*EXCURSIONES*/
+  .sectionTurismo {
+    margin-top: 40px;
+    margin-left: 0px; }
+    .sectionTurismo section {
+      padding: 9px 0px; }
+      .sectionTurismo section .paseos {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 15px; }
+        .sectionTurismo section .paseos div img {
+          border-radius: 10px;
+          width: 290px;
+          height: 208px;
+          margin: 0px; }
+        .sectionTurismo section .paseos div p {
+          width: 19em;
+          margin-top: 19px;
+          font-size: 15px;
+          margin-bottom: 3em;
+          text-align: center; }
+  /*BALNEARIOS y CLIMA*/
+  #climaFlex #margen {
+    margin-top: -12px; }
+    #climaFlex #margen div #microclima {
+      display: none; }
+    #climaFlex #margen p {
+      width: 328px;
+      margin: 22px 0px;
+      text-align: center; }
+  .galeriaImagenes {
+    height: 50em;
+    padding: 0px 0px; }
+    .galeriaImagenes .imgClimaybalnearios {
+      width: 20em;
+      height: 14em;
+      margin: 20px;
+      border-radius: 7px; }
+    .galeriaImagenes .imgClimaybalnearios:hover {
+      box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.466);
+      margin: 20px; }
+  #margen div .listaBalnearios {
+    width: 24em; }
+    #margen div .listaBalnearios li {
+      list-style-type: circle;
+      width: 173px; }
+      #margen div .listaBalnearios li h3 {
+        font-size: 20 px; }
+  /*BLOG*/
+  article {
+    width: 360px;
+    margin-top: 0px;
+    margin-left: 0px; }
+    article div .imgBlog {
+      margin: 0px 0px;
+      border-radius: 8px;
+      width: 20em;
+      height: 13em; }
+    article div p {
+      text-align: center;
+      width: 316px;
+      margin: 0px; }
+  .card {
+    margin: 25px; }
+  /*CONTACTO*/
+  fieldset {
+    padding: 0px 16px;
+    padding-bottom: 109px;
+    margin-bottom: -16px; }
+    fieldset legend {
+      text-align: center;
+      font-size: 19px; } }
