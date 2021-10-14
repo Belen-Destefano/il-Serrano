@@ -2,67 +2,47 @@
 
 @media only screen and (max-width: 1200px) and (min-width: 412px) {
 
-    /*HOME*/
+    .sectionexcursionesPadre .sectionExcursiones .imgExcursionsombra {
+            
+        width: 304px;
+        height: 200px;
+    }
 
-    .sectionexcursionesPadre{
+    .sectionexcursionesPadre {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
 
-        .sectionExcursiones {
-            a{
-                h3 {
-                    font-size: 28px;
-                }
-                h3:hover{
-                    font-size: 30px;
-                }
-                section {
-                    width: 304px;
-                    height: 38px;
-                }
-            }
-            .imgExcursionsombra {
-                width: 304px;
-                height: 200px;
-            }
-        }
     }
 
-    #sectionTable {       
-        tbody {
-            tr{
-                td{            
-                    ul{
-                        width: 19em;                   
-                    }
-                }
-            }
-        }
+    .sectionexcursionesPadre .sectionExcursiones a h3 {
+        font-size: 28px;
     }
 
-    /*EXCURSIONES*/
-
-    .sectionTurismo {
-        section {
-            .paseos {                
-                div {                
-                    img {
-                        border-radius: 10px;
-                        width: 309px;
-                        height: 200px;
-                    }
-                    p {
-                        width: 17em;
-                        margin-top: 20px;
-                    }
-                }
-            }
-        }
+    .sectionexcursionesPadre .sectionExcursiones a h3:hover {
+        font-size: 30px;
     }
-   
-    /*CLIMA Y BALNEARIOS*/
+
+    .sectionexcursionesPadre .sectionExcursiones a section {
+        width: 304px;
+        height: 38px;
+    }
+
+    #sectionTable tbody tr td ul {
+        width: 19em;
+    }
+
+    .sectionTurismo section .paseos div img {
+        border-radius: 10px;
+        width: 309px;
+        height: 200px;
+    }
+
+    .sectionTurismo section .paseos div p {
+        width: 17em;
+        margin-top: 20px;
+    }
 
     .imgClimaybalnearios {
         height: 200px;
@@ -110,7 +90,8 @@
         background-color: #e7e7e7;
         box-shadow: 0px -5px #74726c24;
         padding-top: 25px;
-        height: 8em;        
+        height: 8em;
+        
     }
 
 
@@ -128,7 +109,8 @@
         grid-area: table;
     }
 
-    .gridContainer {        
+    .gridContainer {
+        
         margin-left: 0px;
         padding-left: 0px;
         display: grid;
@@ -139,12 +121,14 @@
         
         "main main"
         "table table"
-        "aside aside"    
+        "aside aside"
+    
     }
 
     .sectionexcursionesPadre {
-        justify-content: space-evenly;
 
+        justify-content: space-evenly;
+        
         .sectionExcursiones {
             padding: 10px;
 
@@ -158,7 +142,8 @@
                 }
                 section{
                     width: 300px;
-                }            
+                }
+            
             }
 
             .imgExcursionsombra {
@@ -176,16 +161,17 @@
             tr{
                 td{
                     ul{
-                        
-                        width: 17em;
+                        width: 22em;
                     }
                 }
             }
         }
     
     }
+
        
-    #aside{        
+    #aside{
+        
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -194,18 +180,21 @@
         
         height: 15em;
         margin: 25px 0px;
-                 
+         
+        
         section {
             width: 289px;
-            margin: 19px;            
+            margin: 19px;
+            
         }
+
     }
 
     #asideImagen {
         display: none;
     }
     
-    /*EXCURSIONES*/
+    /*TURISMO*/
 
     
     .sectionTurismo {
@@ -231,16 +220,22 @@
 
     /*BALNEARIOS*/
 
-    .galeriaImagenes{        
+    .galeriaImagenes{
+        
         padding: 10px 10px;        
         height: 240px;
+
         .imgClimaybalnearios {
             height: 190px;
-            width: 246px;                 
-        }    
-    }    
+            width: 246px;
+                 
+        }
     
-    section {        
+    }    
+
+    
+    section {
+        
         div {
             .listaBalnearios{
                 padding: 2px 31px;
@@ -259,7 +254,8 @@
         }
 
         #articulosFlex {
-            article {               
+            article {                
+                
                 div {
                     h2{
                         width: 20em;
@@ -287,14 +283,14 @@
   
     /*CONTACTO*/
 
-    fieldset {     
+    fieldset {
+     
         margin-bottom: 0px; 
     }   
     
 }
 
 /*RESPONSIVE 768PX ====================================================================== */
-
 @media only screen and (max-width: 768px) {
 
     .titulosH1 {
@@ -302,14 +298,6 @@
         padding-top: 161px;
     }
 
-    .titulosH2 {
-        font-size: 20px;
-       
-    }
-
-   
-
-    /*HOME*/
 
     #table {
         display: none;
@@ -319,7 +307,6 @@
         height: 18em;
     }
 
-    /*CLIMA Y BALNEARIOS*/
 
     .galeriaImagenes{
         height: 29em;
@@ -345,48 +332,35 @@
     }  
     
     
-    /*BLOG*/    
-    
-    body {
-        .container {
-            display: none
-        }
+    /*blog*/
 
-        #articulosFlex {
-            article {               
-                div {
-                    h2{
-                        width: 12em;
-                        text-align: center;
-                        margin: 9px 57px;
-                    }
-                    
-                    .imgBlog {
-                        margin: 7px;
-                        border-radius: 10px;
-                        width: 22em;
-                        height: 18em;
-                    }
-                }
+    body #articulosFlex article div h2 {
+        width: 20em;
+        text-align: center
+    }
 
-                div{
-                    p{
-                        text-align: justify;
-                        width: 21em;
-                        margin: 14px; 
-                    }
-                }
-            }
-        }
+    body #articulosFlex article div .imgBlog {
+        margin: 7px;
+        border-radius: 10px;
+        width: 22em;
+        height: 18em;
+    }
+
+    body #articulosFlex article div p {
+        text-align: justify;
+        width: 21em;
+        margin: 14px;
+    }
+
+    body #articulosFlex article div h2 {
+        width: 12em;
+        text-align: center;
+        margin: 0px;
     }
 }
 
 /*RESPONSIVE 519PX ====================================================================== */
-
 @media only screen and (max-width: 519px) {
-
-    /*CLIMA Y BALNEARIOS*/
-
     .galeriaImagenes{
         height: 40em;
         .imgClimaybalnearios {
@@ -396,14 +370,12 @@
     }    
 }
 
-
-
-
 /*RESPONSIVE 411PX ====================================================================== */
-
 @media only screen and (max-width: 411px) {
 
-    /* GENERALES*/    
+
+    /* GENERALES*/
+    
 
     .header {
         height: 61vh;
@@ -412,20 +384,23 @@
     #margen{
         margin-top:  40px;
         margin-left:  0px;
-    }     
+    } 
+    
     
     #body {
         width: 100%;
         background-color: whitesmoke;
     }
-            
+    
+        
     .titulosH1 {
         font-size: 3em;
         padding-top: 163px;
     }
 
     .titulosH2 {
-        font-size: 18px;           
+        font-size: 18px;
+           
     }
 
     .titulosh3B {
@@ -475,16 +450,20 @@
         grid-area: aside;
     }
 
-    .gridContainer {        
+    .gridContainer {
+        
         margin-left: 0px;
         padding-left: 0px;
         display: grid;
         grid-template-columns: 1fr; 
         grid-template-rows: 2fr; 
 
-        grid-template-areas:        
+
+        grid-template-areas:
+        
         "main"
         "aside"
+    
     }
     
     #table {
@@ -522,18 +501,22 @@
                 position: relative;
 
                 a {
-                    h3{                       
+                    h3{
+                       
                        font-size: 30px;
                     }
-                    h3:hover {                        
+                    h3:hover {
+                        
                         font-size: 32px;
                     }
-                    section{                       
+                    section{
+                       
                         width: 300px;
                         height: 48px;
                     }
                 
-                }                    
+                }
+                    
                 .imgExcursionsombra {                   
                     width: 300px;
                     height: 215px;
@@ -548,11 +531,14 @@
         margin-top: 23px;
         margin-bottom: 0em;
         height: 20em;
+
         
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;                   
+        justify-content: center;
+        
+            
         
         section {            
             margin: 38px;
@@ -576,7 +562,8 @@
             }
         }
 
-        section {            
+        section {
+            
             h3 {
                 font-size: 20px;
             }
@@ -598,16 +585,21 @@
     }
  
     /*EXCURSIONES*/
-
-    .sectionTurismo {        
+    .sectionTurismo {
+        
         margin-top:  40px;
         margin-left:  0px;
         
         section {
             padding: 9px 0px;
-            .paseos {     
+
+            .paseos {
+                
+                
+                                
                 display: flex;
-                flex-direction: row;                
+                flex-direction: row;
+                
 
                 div {                    
                     img {
@@ -628,7 +620,7 @@
         }
     }
 
-    /*BALNEARIOS Y CLIMA*/
+    /*BALNEARIOS y CLIMA*/
 
     #climaFlex{
         #margen {
@@ -647,8 +639,16 @@
     }    
 
     .galeriaImagenes{        
-        height: 40em;
+        height: 48em;
         padding: 0px 0px;
+
+        .imgClimaybalnearios {
+            width: 300px;
+            height: 215px;
+
+        }
+    
+        
     }    
     
     section {        
@@ -666,42 +666,56 @@
         }
     }
     
+    
+
     /*BLOG*/
 
-    body {
-        .container {
-            display: none
-        }
+    body #articulosFlex article div h2 {
+        width: 12em;
+        text-align: center;
+        margin: 0px;
+    }
 
-        #articulosFlex {
-            article {   
-                margin-top: 0px;
-                margin-left: 0px;            
-                div {
-                    h2{
-                        width: 12em;
-                        text-align: center;
-                        margin: 25px 39px;
-                    }
-                    
-                    .imgBlog {
-                        margin: 7px;
-                        border-radius: 10px;
-                        width: 18em;
-                        height: 14em;
-                    }
-                }
+    body #articulosFlex article div .imgBlog {
+        margin: 7px;
+        border-radius: 10px;
+        width: 18em;
+        height: 14em;
+    }
 
-                div{
-                    p{
-                        text-align: justify;
-                        width: 17em;
-                        margin: 14px;   
-                    }
-                }
+    article {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    body #articulosFlex article div p {
+        text-align: justify;
+        width: 17em;
+        margin: 14px;
+    }
+
+ 
+
+    /*article {
+        margin-top: 0px;
+        margin-left: 0px;
+        
+        div{
+            .imgBlog{
+                margin: 7px;
+                border-radius: 10px;
+                width: 15em;
+                height: 11em;
             }
         }
-    }       
+        div{
+            p{
+                text-align: justify;
+                width: 14em;
+                margin: 14px;
+            }
+        }
+    }*/
 
     .card {
         margin: 25px;
@@ -747,6 +761,8 @@
         margin: 3px;        
     }
 
+    
+  
     #footer {       
         p{
           font-size: 12px;          
@@ -767,6 +783,7 @@
         .sectionexcursionesPadre {            
             .sectionExcursiones {     
                 width: 264px;
+
                 a {
                     h3{
                         font-size: 23px;
@@ -789,6 +806,7 @@
         }
     }
    
+
     #aside{
         margin-top: 0px;     
         width: 15em;                 
@@ -809,14 +827,19 @@
                     font-size: 19px;
                 }
             }           
+
             p{
                 display: none;
             }
         }    
- 
+
+       
+            
+        
         section {
             ul {
-                li {                   
+                li {
+                   
                     font-size: 15px;
                 }
             }
@@ -824,10 +847,10 @@
     }
 
     /*EXCURSIONES*/
-
     .sectionTurismo {        
         section {
-           .paseos {         
+           .paseos {               
+                          
                 div {                    
                     img {                        
                         width: 250px;
@@ -835,7 +858,8 @@
                     }
                     p{
                         width: 16em;  
-                        text-align: justify;                                                              
+                        text-align: justify;
+                                                              
                     }
                 }                
             }
@@ -843,7 +867,17 @@
     }
    
     /*BALNEARIOS y CLIMA*/
-   
+
+    
+
+    .galeriaImagenes{
+        height: 46em;
+        .imgClimaybalnearios {
+            width: 271px;
+            height: 204px; 
+        }
+    }    
+ 
     section {        
         div {
             .listaBalnearios{
@@ -861,218 +895,204 @@
     
     /*BLOG*/
 
-   
+    
 
-    body {
-        .container {
-            display: none
-        }
+    .container {
+        display: none;
+    }
 
-        #articulosFlex {
-            article {   
-                width: 277px;
-                div {
-                    width: 17em;
-                    h2{
-                        width: 13em;
-                        text-align: center;
-                       
-                        
-                    }
-                    
-                    .imgBlog {
-                                
-                        width: 17em;
-                        height: 12em;
-                    }
-                }
+    body #articulosFlex article div h2 {
+        width: 15em;
+        text-align: center;
+        margin: 0px;
+    }
 
-                div{
-                    width: 17em;
-                    p{
-                        text-align: justify;
-                        width: 16em;
-                        margin: 16px;
-                        
-                    }
-                }
+
+
+    /*article {
+        width: 19em;        
+        
+        div{
+            .imgBlog{       
+                margin: 20px;         
+                width: 14em;
+                height: 10em;
             }
         }
-    }       
+        div{
+            p{                
+                text-align: justify;
+                width: 15em;
+                margin: 37px;
+            }
+        }
+    }  */ 
+    article {
+        width: 19em;
+    }
 
-   
+    article div .imgBlog {
+        margin: 20px;         
+        width: 14em;
+        height: 10em;
+    }
+
+    article div p {
+        text-align: justify;
+        width: 15em;
+        margin: 37px;
+    }
+
+    article div {
+        width: 19em;
+    }
 }
 
+
 /*RESPONSIVE 280PX ====================================================================== */
-
 @media only screen and (max-width: 280px) {
-
-    /*GENERALES*/
 
     .header {
         height: 53vh;
     }
+
    
     #margen {
-        margin: 18px;
+        margin: 27px;
         padding: 0px;
+    }
+    
+    #main .sectionexcursionesPadre .sectionExcursiones .imgExcursionsombra {
+        width: 221px;
+        height: 150px;
+        margin-left: 0em;
+
+        
+    }
+
+    #main .sectionexcursionesPadre .sectionExcursiones a section {
+        width: 221px;
+        height: 36px;
+    }
+
+    #main .sectionexcursionesPadre .sectionExcursiones a h3 {
+        font-size: 16px;
+    }
+
+    #main .sectionexcursionesPadre .sectionExcursiones a h3:hover {
+        font-size: 17px;
+    }
+
+    
+    #main .sectionexcursionesPadre .sectionExcursiones {
+        
+        width: 217px;
     }
 
     .titulosH2 {
         width: 210px;
     }
 
-    .titulosh3B {
-        margin-bottom: 16px;
-        margin-top: 21px;        
-        padding: 0px;
+    #aside section h3 {
+        font-size: 14px;
     }
 
-    #footer {       
-        p{
-            font-size: 15px;
-            text-align: center;         
-        }
+    #aside section {
+        margin: 11px;
+        width: 14em;
     }
 
-    /*HOME*/ 
-
-    #main {
-        .sectionexcursionesPadre {            
-            .sectionExcursiones {     
-                width: 248px;
-                a {
-                    h3{
-                        font-size: 16px;
-                    }
-                    h3:hover {
-                        font-size: 17px;
-                    }
-                    section{
-                        width: 221px;
-                        height: 36px;
-                    }                
-                }
-
-                .imgExcursionsombra {
-                    width: 221px;
-                    height: 150px;
-                    margin-left: 0em;
-                }
-            }
-        }
+    #aside section form input {
+        height: 2em;
+        width: 11em;
     }
-   
-    #aside{           
-        section {
-            margin: 11px;
-            width: 14em;
-            h3 {
-                font-size: 14px;
-            }
 
-            form {
-                input {
-                    /*height: 2em;
-                    width: 11em;*/
-
-                    height: 2em;
-                    width: 11em;
-                    font-size: 17px;
-                }
-            }          
-        }   
-
-        section {
-            ul {
-                li {                   
-                    font-size: 14px;
-                }
-            }
-        }
+  
+    #aside section form input {
+        height: 2em;
+        width: 11em;
+        font-size: 17px;
     }
+
+    #aside section ul li {
+        font-size: 14px;
+    }
+
+    #footer p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    /*turismo*/
+
+    .sectionTurismo section .paseos div p {
+        width: 15em;
+        text-align: justify;
+    }
+
+    .sectionTurismo section .paseos div img {
+        width: 221px;
+        height: 150px;
+    }
+
+    .sectionTurismo section .paseos {
+        width: 12em;
+    }
+
+
     
-    /*EXCURSIONES*/
 
-    .sectionTurismo {  
-                           
-        section {       
-            margin: 13px;      
-            .paseos {     
-                width: 12em;   
-                div {                    
-                    img {
-                        width: 221px;
-                        height: 150px;                 
-                    }
-                    p{                        
-                        width: 15em;
-                        text-align: justify;
-                    }
-                }               
-            }
-        }
+    /*balnearios*/
+
+    .galeriaImagenes .imgClimaybalnearios {
+        width: 236px;
+        height: 185px;
     }
 
-    /*BALNEARIOS Y CLIMA*/
 
-    .galeriaImagenes{
+    section div .listaBalnearios li {
+        width: 162px;
+    }
+
+    section div .listaBalnearios {
+        padding: 0px 53px;
+        margin: 0px 7px;
+    }
+
+    .galeriaImagenes {
         height: 41em;
-        .imgClimaybalnearios {
-            width: 236px;
-            height: 185px;
-        }
-    }    
- 
-    section {        
-        div {
-            .listaBalnearios{
-                padding: 0px 53px;
-                margin: 0px 7px;
-                li{                    
-                    width: 162px;                    
-                }
-            }
-        }
-    }   
-
-    #climaFlex {
-        #margen {
-            p{
-                width: 224px;
-                text-align: justify;
-            }
-        }
     }
-    
-    /*BLOG*/
+
+    /*clima */ 
+    #climaFlex #margen p {
+        width: 224px;
+        
+        text-align: justify;
+    }
+
+    /*blog*/
+    .container {
+        display: none;
+    }
+
+    article {
+        width: 15em;
+    }
 
 
-    body {
-        .container {
-            display: none
-        }
+    body #articulosFlex article div .imgBlog {
+        margin: 7px;
+        border-radius: 10px;
+        width: 14em;
+        height: 11em;
+    }
 
-        #articulosFlex {
-            article {   
-                width: 15em;
-                div {
-                    .imgBlog {
-                        margin: 7px;
-                        border-radius: 10px;
-                        width: 16em;
-                        height: 11em;
-                    }
-                }
 
-                div{                    
-                    p{
-                        text-align: justify;
-                        width: 14em;
-                        margin: 14px;
-                    }
-                }
-            }
-        }
-    }       
+    body #articulosFlex article div p {
+        text-align: justify;
+        width: 14em;
+        margin: 14px;
+    }
+
+
 }

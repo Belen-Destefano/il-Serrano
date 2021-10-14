@@ -141,6 +141,9 @@ section .h2Error {
   padding-left: 20px;
   padding-right: 20px; }
 
+p {
+  margin: 1rem; }
+
 /*PAGE HOME*/
 /*declarando grid area*/
 #header {
@@ -269,13 +272,18 @@ aside {
         .sectionTurismo section .paseos div img:hover {
           box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.425); }
         .sectionTurismo section .paseos div p {
-          width: 23em;
-          margin-top: 20px; }
+          width: 20em;
+          margin-top: 20px;
+          text-align: justify; }
 
 /*PAGE BALNEARIOS*/
+.imgClimaybalnearios {
+  height: 15em;
+  width: 21em;
+  border-radius: 10px; }
+
 .imgClimaybalnearios:hover {
-  width: 24em;
-  height: 17em; }
+  box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.425); }
 
 section div .listaBalnearios {
   padding: 19px 81px;
@@ -283,11 +291,12 @@ section div .listaBalnearios {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start; }
+  justify-content: space-evenly; }
   section div .listaBalnearios li {
-    list-style-type: circle;
+    list-style-type: none;
     width: 236px;
-    height: 100px; }
+    height: 100px;
+    padding-left: 27px; }
     section div .listaBalnearios li h3 {
       color: #551400;
       font-family: 'Roboto', sans-serif;
@@ -302,7 +311,11 @@ section div .listaBalnearios {
 .galeriaImagenes {
   padding: 26px 70px;
   margin: 0px 0px;
-  height: 300px; }
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
 
 #climaFlex {
   display: flex;
@@ -355,13 +368,12 @@ section div .listaBalnearios {
   align-items: center; }
 
 article {
-  width: 850px;
   margin-top: 20px;
   margin-bottom: 20px; }
   article div h2 {
-    text-align: center;
-    width: 25em; }
+    text-align: center; }
   article div .imgBlog {
+    margin: 25px 0px;
     padding: 0px;
     border-radius: 10px;
     width: 50em;
@@ -370,7 +382,7 @@ article {
     border: 3px solid #e77e01; }
   article div p {
     text-align: center;
-    width: 50em; }
+    width: 48em; }
 
 /*PAGE CONTACTO*/
 #contactoFlex {
@@ -396,25 +408,219 @@ fieldset {
     margin-top: 30px;
     margin-bottom: 20px; }
 
-/*RESPONSIVE 360PX */
-@media only screen and (max-width: 360px) {
+/*RESPONSIVE 1200PX ====================================================================== */
+@media only screen and (max-width: 1200px) and (min-width: 412px) {
+  /*HOME*/
+  .sectionexcursionesPadre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .sectionexcursionesPadre .sectionExcursiones a h3 {
+      font-size: 28px; }
+    .sectionexcursionesPadre .sectionExcursiones a h3:hover {
+      font-size: 30px; }
+    .sectionexcursionesPadre .sectionExcursiones a section {
+      width: 304px;
+      height: 38px; }
+    .sectionexcursionesPadre .sectionExcursiones .imgExcursionsombra {
+      width: 304px;
+      height: 200px; }
+  #sectionTable tbody tr td ul {
+    width: 19em; }
+  /*EXCURSIONES*/
+  .sectionTurismo section .paseos div img {
+    border-radius: 10px;
+    width: 309px;
+    height: 200px; }
+  .sectionTurismo section .paseos div p {
+    width: 17em;
+    margin-top: 20px; }
+  /*CLIMA Y BALNEARIOS*/
+  .imgClimaybalnearios {
+    height: 200px;
+    width: 290px; }
+  .galeriaImagenes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; } }
+
+/*RESPONSIVE 1024PX ====================================================================== */
+@media only screen and (max-width: 1024px) {
+  /*GENERALES*/
+  #body {
+    background-color: whitesmoke; }
+  .header {
+    height: 52vh; }
+  .titulosH1 {
+    padding-top: 127px; }
+  #margen {
+    margin-top: 50px;
+    padding-left: 0px;
+    padding-right: 0px; }
+  p {
+    text-align: justify;
+    margin: 4px; }
+  #footer {
+    background-color: #e7e7e7;
+    box-shadow: 0px -5px #74726c24;
+    padding-top: 25px;
+    height: 8em; }
+  /*HOME*/
+  #main {
+    grid-area: main; }
+  #aside {
+    grid-area: aside; }
+  #table {
+    grid-area: table; }
+  .gridContainer {
+    margin-left: 0px;
+    padding-left: 0px;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 3fr;
+    grid-template-areas: "main main" "table table" "aside aside"; }
+  .sectionexcursionesPadre {
+    justify-content: space-evenly; }
+    .sectionexcursionesPadre .sectionExcursiones {
+      padding: 10px; }
+      .sectionexcursionesPadre .sectionExcursiones a h3 {
+        font-size: 22px;
+        left: 15px; }
+      .sectionexcursionesPadre .sectionExcursiones a h3:hover {
+        font-size: 24px; }
+      .sectionexcursionesPadre .sectionExcursiones a section {
+        width: 300px; }
+      .sectionexcursionesPadre .sectionExcursiones .imgExcursionsombra {
+        border-radius: 10px;
+        width: 300px;
+        height: 195; }
+  #sectionTable {
+    margin: 64px; }
+    #sectionTable tbody tr td ul {
+      width: 17em; }
+  #aside {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 10em;
+    height: 15em;
+    margin: 25px 0px; }
+    #aside section {
+      width: 289px;
+      margin: 19px; }
+  #asideImagen {
+    display: none; }
+  /*EXCURSIONES*/
+  .sectionTurismo section .paseos {
+    margin-bottom: 0px;
+    justify-content: space-evenly; }
+    .sectionTurismo section .paseos div {
+      margin-bottom: 26px; }
+      .sectionTurismo section .paseos div img {
+        border-radius: 10px;
+        width: 295px; }
+      .sectionTurismo section .paseos div p {
+        width: 17em; }
+  /*BALNEARIOS*/
+  .galeriaImagenes {
+    padding: 10px 10px;
+    height: 240px; }
+    .galeriaImagenes .imgClimaybalnearios {
+      height: 190px;
+      width: 246px; }
+  section div .listaBalnearios {
+    padding: 2px 31px; }
+    section div .listaBalnearios li {
+      width: 176px; }
+  /*BLOG*/
+  body .container {
+    display: none; }
+  body #articulosFlex article div h2 {
+    width: 20em;
+    margin-left: 50px; }
+  body #articulosFlex article div .imgBlog {
+    margin: 23px 0px;
+    border-radius: 10px;
+    width: 45em;
+    height: 27em; }
+  body #articulosFlex article div p {
+    text-align: center;
+    width: 42em;
+    margin: 17px 21px; }
+  /*CONTACTO*/
+  fieldset {
+    margin-bottom: 0px; } }
+
+/*RESPONSIVE 768PX ====================================================================== */
+@media only screen and (max-width: 768px) {
+  .titulosH1 {
+    font-size: 3em;
+    padding-top: 161px; }
+  .titulosH2 {
+    font-size: 20px; }
+  /*HOME*/
+  #table {
+    display: none; }
+  #aside {
+    height: 18em; }
+  /*CLIMA Y BALNEARIOS*/
+  .galeriaImagenes {
+    height: 29em; }
+    .galeriaImagenes .imgClimaybalnearios {
+      width: 250px;
+      height: 182px; }
+  section div .listaBalnearios {
+    padding: 0px 0px;
+    margin: 0px 7px; }
+    section div .listaBalnearios li {
+      width: 173px; }
+      section div .listaBalnearios li h3 {
+        font-size: 20 px; }
+  /*BLOG*/
+  body .container {
+    display: none; }
+  body #articulosFlex article div h2 {
+    width: 12em;
+    text-align: center;
+    margin: 9px 57px; }
+  body #articulosFlex article div .imgBlog {
+    margin: 7px;
+    border-radius: 10px;
+    width: 22em;
+    height: 18em; }
+  body #articulosFlex article div p {
+    text-align: justify;
+    width: 21em;
+    margin: 14px; } }
+
+/*RESPONSIVE 519PX ====================================================================== */
+@media only screen and (max-width: 519px) {
+  /*CLIMA Y BALNEARIOS*/
+  .galeriaImagenes {
+    height: 40em; }
+    .galeriaImagenes .imgClimaybalnearios {
+      width: 250px;
+      height: 182px; } }
+
+/*RESPONSIVE 411PX ====================================================================== */
+@media only screen and (max-width: 411px) {
   /* GENERALES*/
   .header {
-    height: 45vh; }
+    height: 61vh; }
   #margen {
     margin-top: 40px;
     margin-left: 0px; }
   #body {
     width: 100%;
     background-color: whitesmoke; }
-  main {
-    width: 360px; }
   .titulosH1 {
-    font-size: 2em; }
+    font-size: 3em;
+    padding-top: 163px; }
   .titulosH2 {
-    font-size: 18px;
-    width: 311px;
-    margin: 3px; }
+    font-size: 18px; }
   .titulosh3B {
     margin-bottom: 1px;
     margin-top: 55px;
@@ -424,18 +630,18 @@ fieldset {
   #footer {
     background-color: #e7e7e7;
     box-shadow: 0px -5px #74726c24;
-    padding-top: 40px;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 11em; }
+    height: 8em; }
     #footer #redes {
       display: inline-block;
       width: 81px; }
       #footer #redes a img {
         width: 38px; }
     #footer p {
-      font-size: 12px;
+      font-size: 15px;
       margin-bottom: 3em; }
   /*HOME*/
   #main {
@@ -460,29 +666,34 @@ fieldset {
   #main .sectionexcursionesPadre {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center; }
     #main .sectionexcursionesPadre .sectionExcursiones {
       width: 322px;
       padding: 9px;
       position: relative; }
       #main .sectionexcursionesPadre .sectionExcursiones a h3 {
-        font-size: 27px; }
+        font-size: 30px; }
       #main .sectionexcursionesPadre .sectionExcursiones a h3:hover {
-        font-size: 31px; }
+        font-size: 32px; }
       #main .sectionexcursionesPadre .sectionExcursiones a section {
-        width: 305px;
+        width: 300px;
         height: 48px; }
       #main .sectionexcursionesPadre .sectionExcursiones .imgExcursionsombra {
-        width: 19em;
-        height: 12em;
+        width: 300px;
+        height: 215px;
         margin-left: 0em; }
   #aside {
     margin-top: 23px;
     margin-bottom: 0em;
-    height: 20em; }
+    height: 20em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
     #aside section {
-      margin-bottom: 68px; }
+      margin: 38px; }
       #aside section h3 {
         font-size: 20px; }
       #aside section form label {
@@ -493,16 +704,14 @@ fieldset {
         font-size: 20px; }
       #aside section p {
         display: none; }
-    #aside section {
-      margin-bottom: 68px; }
-      #aside section h3 {
-        font-size: 20px; }
-      #aside section p {
-        display: none; }
-      #aside section ul li {
-        font-size: 21px; }
-        #aside section ul li a {
-          text-decoration: none; }
+    #aside section h3 {
+      font-size: 20px; }
+    #aside section p {
+      display: none; }
+    #aside section ul li {
+      font-size: 21px; }
+      #aside section ul li a {
+        text-decoration: none; }
   /*EXCURSIONES*/
   .sectionTurismo {
     margin-top: 40px;
@@ -511,67 +720,230 @@ fieldset {
       padding: 9px 0px; }
       .sectionTurismo section .paseos {
         display: flex;
-        flex-direction: column;
-        margin: 20px 15px; }
+        flex-direction: row; }
         .sectionTurismo section .paseos div img {
           border-radius: 10px;
-          width: 290px;
-          height: 208px;
+          width: 330px;
+          height: 215px;
           margin: 0px; }
         .sectionTurismo section .paseos div p {
-          width: 19em;
-          margin-top: 19px;
-          font-size: 15px;
-          margin-bottom: 3em;
+          width: 20em;
+          margin: 0px 0px;
+          font-size: 16px;
           text-align: center; }
-  /*BALNEARIOS y CLIMA*/
+  /*BALNEARIOS Y CLIMA*/
   #climaFlex #margen {
     margin-top: -12px; }
     #climaFlex #margen div #microclima {
       display: none; }
     #climaFlex #margen p {
-      width: 328px;
       margin: 22px 0px;
-      text-align: center; }
+      text-align: justify; }
   .galeriaImagenes {
-    height: 50em;
+    height: 40em;
     padding: 0px 0px; }
-    .galeriaImagenes .imgClimaybalnearios {
-      width: 20em;
-      height: 14em;
-      margin: 20px;
-      border-radius: 7px; }
-    .galeriaImagenes .imgClimaybalnearios:hover {
-      box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.466);
-      margin: 20px; }
-  #margen div .listaBalnearios {
-    width: 24em; }
-    #margen div .listaBalnearios li {
-      list-style-type: circle;
-      width: 173px; }
-      #margen div .listaBalnearios li h3 {
-        font-size: 20 px; }
+  section div .listaBalnearios {
+    padding: 0px 0px;
+    margin: 0px 32px; }
+    section div .listaBalnearios li {
+      list-style-type: none;
+      width: 173px;
+      padding: 7px; }
   /*BLOG*/
-  article {
-    width: 360px;
+  body .container {
+    display: none; }
+  body #articulosFlex article {
     margin-top: 0px;
     margin-left: 0px; }
-    article div .imgBlog {
-      margin: 0px 0px;
-      border-radius: 8px;
-      width: 20em;
-      height: 13em; }
-    article div p {
+    body #articulosFlex article div h2 {
+      width: 12em;
       text-align: center;
-      width: 316px;
-      margin: 0px; }
+      margin: 25px 39px; }
+    body #articulosFlex article div .imgBlog {
+      margin: 7px;
+      border-radius: 10px;
+      width: 18em;
+      height: 14em; }
+    body #articulosFlex article div p {
+      text-align: justify;
+      width: 17em;
+      margin: 14px; }
   .card {
     margin: 25px; }
   /*CONTACTO*/
-  fieldset {
-    padding: 0px 16px;
-    padding-bottom: 109px;
-    margin-bottom: -16px; }
-    fieldset legend {
-      text-align: center;
-      font-size: 19px; } }
+  #contactoFlex {
+    margin-bottom: 19px; }
+    #contactoFlex fieldset {
+      padding: 0px 16px;
+      padding-bottom: 109px;
+      margin-bottom: -16px; }
+      #contactoFlex fieldset legend {
+        text-align: center;
+        font-size: 19px; } }
+
+/*RESPONSIVE 360PX ====================================================================== */
+@media only screen and (max-width: 360px) {
+  /* GENERALES*/
+  .header {
+    height: 54vh; }
+  .titulosH1 {
+    font-size: 2em;
+    padding-top: 185px; }
+  .titulosH2 {
+    font-size: 15px;
+    width: 258px;
+    margin: 3px; }
+  #footer p {
+    font-size: 12px; }
+  /*HOME*/
+  #main section div p {
+    display: none; }
+  #main .sectionexcursionesPadre .sectionExcursiones {
+    width: 264px; }
+    #main .sectionexcursionesPadre .sectionExcursiones a h3 {
+      font-size: 23px; }
+    #main .sectionexcursionesPadre .sectionExcursiones a h3:hover {
+      font-size: 24px; }
+    #main .sectionexcursionesPadre .sectionExcursiones a section {
+      width: 250px;
+      height: 40px; }
+    #main .sectionexcursionesPadre .sectionExcursiones .imgExcursionsombra {
+      width: 250px;
+      height: 182px;
+      margin-left: 0em; }
+  #aside {
+    margin-top: 0px;
+    width: 15em; }
+    #aside section {
+      margin: 19px;
+      width: 238px; }
+      #aside section h3 {
+        font-size: 15px; }
+      #aside section form label {
+        display: none; }
+      #aside section form input {
+        height: 2em;
+        width: 11em;
+        font-size: 19px; }
+      #aside section p {
+        display: none; }
+    #aside section ul li {
+      font-size: 15px; }
+  /*EXCURSIONES*/
+  .sectionTurismo section .paseos div img {
+    width: 250px;
+    height: 182px; }
+  .sectionTurismo section .paseos div p {
+    width: 16em;
+    text-align: justify; }
+  /*BALNEARIOS y CLIMA*/
+  section div .listaBalnearios {
+    padding: 0px 0px;
+    margin: 0px 7px; }
+    section div .listaBalnearios li {
+      width: 173px; }
+      section div .listaBalnearios li h3 {
+        font-size: 20 px; }
+  /*BLOG*/
+  body .container {
+    display: none; }
+  body #articulosFlex article {
+    width: 277px; }
+    body #articulosFlex article div {
+      width: 17em; }
+      body #articulosFlex article div h2 {
+        width: 13em;
+        text-align: center; }
+      body #articulosFlex article div .imgBlog {
+        width: 17em;
+        height: 12em; }
+    body #articulosFlex article div {
+      width: 17em; }
+      body #articulosFlex article div p {
+        text-align: justify;
+        width: 16em;
+        margin: 16px; } }
+
+/*RESPONSIVE 280PX ====================================================================== */
+@media only screen and (max-width: 280px) {
+  /*GENERALES*/
+  .header {
+    height: 53vh; }
+  #margen {
+    margin: 18px;
+    padding: 0px; }
+  .titulosH2 {
+    width: 210px; }
+  .titulosh3B {
+    margin-bottom: 16px;
+    margin-top: 21px;
+    padding: 0px; }
+  #footer p {
+    font-size: 15px;
+    text-align: center; }
+  /*HOME*/
+  #main .sectionexcursionesPadre .sectionExcursiones {
+    width: 248px; }
+    #main .sectionexcursionesPadre .sectionExcursiones a h3 {
+      font-size: 16px; }
+    #main .sectionexcursionesPadre .sectionExcursiones a h3:hover {
+      font-size: 17px; }
+    #main .sectionexcursionesPadre .sectionExcursiones a section {
+      width: 221px;
+      height: 36px; }
+    #main .sectionexcursionesPadre .sectionExcursiones .imgExcursionsombra {
+      width: 221px;
+      height: 150px;
+      margin-left: 0em; }
+  #aside section {
+    margin: 11px;
+    width: 14em; }
+    #aside section h3 {
+      font-size: 14px; }
+    #aside section form input {
+      /*height: 2em;
+                    width: 11em;*/
+      height: 2em;
+      width: 11em;
+      font-size: 17px; }
+  #aside section ul li {
+    font-size: 14px; }
+  /*EXCURSIONES*/
+  .sectionTurismo section {
+    margin: 13px; }
+    .sectionTurismo section .paseos {
+      width: 12em; }
+      .sectionTurismo section .paseos div img {
+        width: 221px;
+        height: 150px; }
+      .sectionTurismo section .paseos div p {
+        width: 15em;
+        text-align: justify; }
+  /*BALNEARIOS Y CLIMA*/
+  .galeriaImagenes {
+    height: 41em; }
+    .galeriaImagenes .imgClimaybalnearios {
+      width: 236px;
+      height: 185px; }
+  section div .listaBalnearios {
+    padding: 0px 53px;
+    margin: 0px 7px; }
+    section div .listaBalnearios li {
+      width: 162px; }
+  #climaFlex #margen p {
+    width: 224px;
+    text-align: justify; }
+  /*BLOG*/
+  body .container {
+    display: none; }
+  body #articulosFlex article {
+    width: 15em; }
+    body #articulosFlex article div .imgBlog {
+      margin: 7px;
+      border-radius: 10px;
+      width: 16em;
+      height: 11em; }
+    body #articulosFlex article div p {
+      text-align: justify;
+      width: 14em;
+      margin: 14px; } }

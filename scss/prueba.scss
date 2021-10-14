@@ -69,6 +69,10 @@
     
 } 
 
+p{
+    margin: 1rem;
+}
+
 /*PAGE HOME*/
 
 /*declarando grid area*/
@@ -297,8 +301,9 @@ aside {
                 }
 
                 p {
-                    width: 23em ;
+                    width: 20em ;
                     margin-top: 20px;
+                    text-align: justify;
                 }
             }
         }
@@ -310,34 +315,34 @@ aside {
 
 /*PAGE BALNEARIOS*/
 
+.imgClimaybalnearios {
+    height: 15em;
+    width: 21em;
+    border-radius: 10px; 
+}
 
 .imgClimaybalnearios:hover {
-    width: 24em; height: 17em;
+    box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.425);
 }
 
 
-
-section {
-
-   
+section {   
 
     div {
         .listaBalnearios{
             
             padding: 19px 81px;
             margin: 0px 0px;
-
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;  
-            
-            justify-content: flex-start;
-
+            flex-wrap: wrap;    
+            justify-content: space-evenly;         
 
             li{
-                list-style-type: circle;
+                list-style-type: none;
                 width: 236px;
                 height: 100px;
+                padding-left: 27px;
 
                 h3{
                     color: #551400 ;
@@ -366,6 +371,11 @@ section {
     padding: 26px 70px;
     margin: 0px 0px;
     height: 300px; 
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 #climaFlex {
@@ -446,47 +456,36 @@ section {
 }
 
 
-article {
-    width: 850px;
-    
-
+article {       
     margin-top: 20px;
     margin-bottom: 20px;
 
     div {
         h2 {
-            text-align: center;
-            width: 25em;
+            text-align: center;            
         }
 
         .imgBlog { 
+            margin: 25px 0px;
             padding: 0px;
             border-radius: 10px;    
             width: 50em; 
             height: 30em;
         }
         
-        .imgBlog:hover {
-              
-            border:3px solid #e77e01 ;
-           
-        
+        .imgBlog:hover {              
+            border:3px solid #e77e01 ;         
         }
-
-
     }
 
     div {
         p{
             text-align: center;
-            width: 50em;
+            width: 48em;
         }
     }
 
 }
-
-
-
 
 /*PAGE CONTACTO*/
 
