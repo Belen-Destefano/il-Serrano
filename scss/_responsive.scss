@@ -87,6 +87,7 @@
         height: 52vh;
     }
 
+    
     .titulosH1 {
         padding-top: 127px;
     }
@@ -306,6 +307,10 @@
     .titulosh3B {
         font-size: 26px;
     }
+
+    .header {
+        height: 52vh;
+    }
    
 
     /*HOME*/
@@ -405,6 +410,7 @@
 /*RESPONSIVE 519PX ====================================================================== */
 
 @media only screen and (max-width: 519px) {
+    
 
     /*CLIMA Y BALNEARIOS*/
 
@@ -634,6 +640,7 @@
     .galeriaImagenes{        
         height: 40em;
         padding: 0px 0px;
+        margin-top: 15px;
     }    
     
     section {        
@@ -666,7 +673,7 @@
                     h2{
                         width: 12em;
                         text-align: center;
-                        margin: 25px 39px;
+                        margin: 25px 25px;
                     }
                     
                     .imgBlog {
@@ -718,7 +725,7 @@
     /* GENERALES*/
 
     .header {
-        height: 54vh;
+        height: 50vh;
     }
 
     .titulosH1 {
@@ -829,7 +836,8 @@
                     }
                     p{
                         width: 16em;  
-                        text-align: justify;                                                              
+                        text-align: justify;   
+                        margin-top: 8px;                                                           
                     }
                 }                
             }
