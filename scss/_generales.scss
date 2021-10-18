@@ -23,23 +23,25 @@
                     height: 5em;
                 }
             } 
-
-
-        
         }
-        
-       
-
     }
+}
 
+/*BODY*/
+
+#body {
+    background-color: whitesmoke;
 }
 
 
 /*FOOTER*/
 
 #footer {
-    padding-top: 20px;
-    
+
+    background-color: #e7e7e7;
+    box-shadow: -2px 1px 11px rgba(0, 0, 0, 0.425);
+
+    padding-top: 20px;    
 
     display: flex;
     flex-direction: column;
@@ -55,4 +57,10 @@
             }
         }
     }
+    p {
+        text-align: center;
+    }
 }
+
+
+                    

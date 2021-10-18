@@ -40,8 +40,14 @@ h3 {
     width: 6em;
     height: 5em; }
 
+/*BODY*/
+#body {
+  background-color: whitesmoke; }
+
 /*FOOTER*/
 #footer {
+  background-color: #e7e7e7;
+  box-shadow: -2px 1px 11px rgba(0, 0, 0, 0.425);
   padding-top: 20px;
   display: flex;
   flex-direction: column;
@@ -50,6 +56,8 @@ h3 {
     display: inline-block; }
     #footer #redes a img {
       width: 40px; }
+  #footer p {
+    text-align: center; }
 
 /*PAGE ERROR*/
 .headerError {
@@ -112,8 +120,7 @@ section .h2Error {
 
 .titulosH2 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  text-align: left; }
+  font-weight: 400; }
 
 .titulosh3B {
   margin-top: 25px;
@@ -123,9 +130,9 @@ section .h2Error {
   font-size: 2em;
   font-style: italic;
   font-weight: 500;
-  padding-left: 20px;
-  width: 9em;
-  justify-content: end;
+  box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.425);
+  width: 8em;
+  text-align: center;
   background: linear-gradient(131deg, #fcfcfc 3%, #ededed 15%, rgba(213, 213, 213, 0.616684) 82%, white 100%); }
 
 .titulosH3 {
@@ -143,6 +150,12 @@ section .h2Error {
 
 p {
   margin: 1rem; }
+
+#resumido {
+  display: none; }
+
+p {
+  text-align: justify; }
 
 /*PAGE HOME*/
 /*declarando grid area*/
@@ -235,14 +248,16 @@ aside {
   margin-top: 60px;
   width: 20em;
   height: 45em; }
-  aside section h3 {
-    margin-bottom: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.25em;
-    font-weight: 550;
-    font-style: italic;
-    text-align: left;
-    text-transform: uppercase; }
+  aside section {
+    width: 18em; }
+    aside section h3 {
+      margin-bottom: 10px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.25em;
+      font-weight: 550;
+      font-style: italic;
+      text-align: left;
+      text-transform: uppercase; }
   aside section ul li a {
     color: #551400; }
 
@@ -255,7 +270,7 @@ aside {
   margin-top: 70px;
   background-color: whitesmoke; }
   .sectionTurismo section {
-    padding: 26px 0px; }
+    padding: 10px 0px; }
     .sectionTurismo section .paseos {
       margin-top: 30px;
       margin-bottom: 30px;
@@ -396,11 +411,10 @@ fieldset {
   /*gradiente*/
   background: white;
   background: linear-gradient(82deg, white 0%, rgba(140, 146, 147, 0.286152) 100%);
-  box-shadow: -2px 5px 11px rgba(0, 0, 0, 0.425);
+  box-shadow: -2px 1px 11px rgba(0, 0, 0, 0.425);
   padding-top: 50px;
   padding-bottom: 50px;
-  padding-left: 30px;
-  margin-bottom: 31px; }
+  padding-left: 30px; }
   fieldset legend {
     margin-top: 30px;
     margin-bottom: 50px; }
@@ -449,8 +463,6 @@ fieldset {
 /*RESPONSIVE 1024PX ====================================================================== */
 @media only screen and (max-width: 1024px) {
   /*GENERALES*/
-  #body {
-    background-color: whitesmoke; }
   .header {
     height: 52vh; }
   .titulosH1 {
@@ -460,11 +472,9 @@ fieldset {
     padding-left: 0px;
     padding-right: 0px; }
   p {
-    text-align: justify;
-    margin: 4px; }
+    margin: 10px;
+    text-align: justify; }
   #footer {
-    background-color: #e7e7e7;
-    box-shadow: 0px -5px #74726c24;
     padding-top: 25px;
     height: 8em; }
   /*HOME*/
@@ -495,7 +505,7 @@ fieldset {
       .sectionexcursionesPadre .sectionExcursiones .imgExcursionsombra {
         border-radius: 10px;
         width: 300px;
-        height: 195; }
+        height: 195px; }
   #sectionTable {
     margin: 64px; }
     #sectionTable tbody tr td ul {
@@ -509,7 +519,6 @@ fieldset {
     height: 15em;
     margin: 25px 0px; }
     #aside section {
-      width: 289px;
       margin: 19px; }
   #asideImagen {
     display: none; }
@@ -560,13 +569,27 @@ fieldset {
     font-size: 3em;
     padding-top: 161px; }
   .titulosH2 {
-    font-size: 20px; }
+    font-size: 20px;
+    font-weight: 500;
+    margin: 2px 28px; }
+  .titulosh3B {
+    font-size: 26px; }
   /*HOME*/
   #table {
     display: none; }
   #aside {
     height: 18em; }
+  aside section {
+    width: 238px; }
+    aside section h3 {
+      margin-bottom: 10px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 17px; }
   /*CLIMA Y BALNEARIOS*/
+  #climaFlex #margen {
+    margin-top: -12px; }
+    #climaFlex #margen div #microclima {
+      display: none; }
   .galeriaImagenes {
     height: 29em; }
     .galeriaImagenes .imgClimaybalnearios {
@@ -603,7 +626,13 @@ fieldset {
     height: 40em; }
     .galeriaImagenes .imgClimaybalnearios {
       width: 250px;
-      height: 182px; } }
+      height: 182px; }
+  aside section {
+    width: 189px; }
+    aside section h3 {
+      margin-bottom: 10px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 17px; } }
 
 /*RESPONSIVE 411PX ====================================================================== */
 @media only screen and (max-width: 411px) {
@@ -618,18 +647,20 @@ fieldset {
     background-color: whitesmoke; }
   .titulosH1 {
     font-size: 3em;
-    padding-top: 163px; }
+    padding-top: 177px; }
   .titulosH2 {
     font-size: 18px; }
   .titulosh3B {
-    margin-bottom: 1px;
-    margin-top: 55px;
-    font-size: 26px; }
+    margin-bottom: 28px;
+    margin-top: 20px;
+    font-size: 26px;
+    width: 8em; }
   .titulosH3 {
     font-size: 1.25em; }
+  #resumido {
+    display: inline; }
   #footer {
     background-color: #e7e7e7;
-    box-shadow: 0px -5px #74726c24;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
@@ -661,57 +692,32 @@ fieldset {
     display: none; }
   #botonSubir {
     display: none; }
-  #main section div p {
+  #sinresumir {
     display: none; }
+  #main section div {
+    text-align: justify;
+    padding: 8px; }
+    #main section div .titulosH2 {
+      text-align: center; }
+    #main section div p {
+      font-size: 14px; }
   #main .sectionexcursionesPadre {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center; }
-    #main .sectionexcursionesPadre .sectionExcursiones {
-      width: 322px;
-      padding: 9px;
-      position: relative; }
-      #main .sectionexcursionesPadre .sectionExcursiones a h3 {
-        font-size: 30px; }
-      #main .sectionexcursionesPadre .sectionExcursiones a h3:hover {
-        font-size: 32px; }
-      #main .sectionexcursionesPadre .sectionExcursiones a section {
-        width: 300px;
-        height: 48px; }
-      #main .sectionexcursionesPadre .sectionExcursiones .imgExcursionsombra {
-        width: 300px;
-        height: 215px;
-        margin-left: 0em; }
   #aside {
     margin-top: 23px;
     margin-bottom: 0em;
-    height: 20em;
+    height: 28em;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center; }
     #aside section {
-      margin: 38px; }
-      #aside section h3 {
-        font-size: 20px; }
-      #aside section form label {
-        display: none; }
-      #aside section form input {
-        height: 2em;
-        width: 13em;
-        font-size: 20px; }
-      #aside section p {
-        display: none; }
-    #aside section h3 {
-      font-size: 20px; }
-    #aside section p {
-      display: none; }
-    #aside section ul li {
-      font-size: 21px; }
-      #aside section ul li a {
-        text-decoration: none; }
+      width: 238px; }
   /*EXCURSIONES*/
   .sectionTurismo {
     margin-top: 40px;
@@ -737,7 +743,7 @@ fieldset {
     #climaFlex #margen div #microclima {
       display: none; }
     #climaFlex #margen p {
-      margin: 22px 0px;
+      margin: 22px 8px;
       text-align: justify; }
   .galeriaImagenes {
     height: 40em;
@@ -790,13 +796,16 @@ fieldset {
     font-size: 2em;
     padding-top: 185px; }
   .titulosH2 {
-    font-size: 15px;
-    width: 258px;
-    margin: 3px; }
+    font-size: 17px;
+    font-weight: 500;
+    margin: 10px 8px;
+    text-align: center; }
+  .titulosh3B {
+    font-size: 21px; }
   #footer p {
     font-size: 12px; }
   /*HOME*/
-  #main section div p {
+  #main section div #sinresumir {
     display: none; }
   #main .sectionexcursionesPadre .sectionExcursiones {
     width: 264px; }
@@ -813,7 +822,8 @@ fieldset {
       margin-left: 0em; }
   #aside {
     margin-top: 0px;
-    width: 15em; }
+    width: 16em;
+    height: 17em; }
     #aside section {
       margin: 19px;
       width: 238px; }
@@ -879,7 +889,6 @@ fieldset {
     margin-top: 21px;
     padding: 0px; }
   #footer p {
-    font-size: 15px;
     text-align: center; }
   /*HOME*/
   #main .sectionexcursionesPadre .sectionExcursiones {
@@ -938,6 +947,8 @@ fieldset {
     display: none; }
   body #articulosFlex article {
     width: 15em; }
+    body #articulosFlex article div h2 {
+      width: 11em; }
     body #articulosFlex article div .imgBlog {
       margin: 7px;
       border-radius: 10px;
