@@ -83,15 +83,7 @@
     
     /*GENERALES*/
 
-    .header {
-        height: 52vh;
-    }
-
     
-    .titulosH1 {
-        padding-top: 127px;
-    }
-
     #margen {
         margin-top: 50px;
         padding-left: 0px;
@@ -150,7 +142,7 @@
                     left: 15px;
                 }
                 h3:hover {
-                    font-size: 24px;
+                    font-size: 26px;
                 }
                 section{
                     width: 300px;
@@ -289,6 +281,16 @@
     
 }
 
+/*RESPONSIVE DE 892PX A 768PX*/
+
+@media only screen and (max-width: 892px) and (min-width: 768px)  {
+    .titulosH1 {
+        margin-top: 0em;
+    }
+
+
+}
+
 /*RESPONSIVE 768PX ====================================================================== */
 
 @media only screen and (max-width: 768px) {
@@ -301,18 +303,14 @@
     .titulosH2 {    
         font-size: 20px;
         font-weight: 500;
-        margin: 2px 28px;       
+        margin: 2px 11px;       
     }
 
     .titulosh3B {
         font-size: 26px;
     }
 
-    .header {
-        height: 52vh;
-    }
-   
-
+    
     /*HOME*/
 
     #table {
@@ -440,10 +438,7 @@
 
     /* GENERALES*/    
 
-    .header {
-        height: 61vh;
-    }
-
+   
     #margen{
         margin-top:  40px;
         margin-left:  0px;
@@ -455,8 +450,7 @@
     }
             
     .titulosH1 {
-        font-size: 3em;
-        padding-top: 177px;
+        font-size: 3em;      
     }
 
     .titulosH2 {
@@ -724,13 +718,9 @@
 
     /* GENERALES*/
 
-    .header {
-        height: 50vh;
-    }
-
     .titulosH1 {
       font-size: 2em;   
-      padding-top: 185px; 
+      height: 8em;
     }
 
     .titulosH2 {
@@ -752,6 +742,8 @@
         }
     }
 
+    
+
     /*HOME*/  
                    
     #main {
@@ -759,6 +751,7 @@
             div {
                 #sinresumir {
                     display: none;
+                   
                 }
             }
         }    
@@ -771,7 +764,7 @@
                         font-size: 23px;
                     }
                     h3:hover {
-                        font-size: 24px;
+                        font-size: 26px;
                     }
                     section{
                         width: 250px;
@@ -910,10 +903,6 @@
 @media only screen and (max-width: 280px) {
 
     /*GENERALES*/
-
-    .header {
-        height: 53vh;
-    }
    
     #margen {
         margin: 18px;
@@ -949,7 +938,7 @@
                         font-size: 16px;
                     }
                     h3:hover {
-                        font-size: 17px;
+                        font-size: 19px;
                     }
                     section{
                         width: 221px;
@@ -976,9 +965,6 @@
 
             form {
                 input {
-                    /*height: 2em;
-                    width: 11em;*/
-
                     height: 2em;
                     width: 11em;
                     font-size: 17px;

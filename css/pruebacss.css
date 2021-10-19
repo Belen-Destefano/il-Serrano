@@ -28,7 +28,7 @@ h3 {
 
 /*HEADER*/
 .header {
-  height: 62vh;
+  /*height: 62vh;*/
   background-color: #2E2318;
   /* fondo por si la imagen no carga*/
   background-image: url(../images/portada.jpg);
@@ -116,11 +116,14 @@ section .h2Error {
   font-weight: 500em;
   margin-top: 1em;
   padding-top: 195px;
-  text-align: center; }
+  text-align: center;
+  /*esto agrege*/
+  height: 6em; }
 
 .titulosH2 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  margin: 8px; }
 
 .titulosh3B {
   margin-top: 25px;
@@ -298,7 +301,7 @@ aside {
   border-radius: 10px; }
 
 .imgClimaybalnearios:hover {
-  box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.425); }
+  box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.425); }
 
 section div .listaBalnearios {
   padding: 19px 81px;
@@ -463,10 +466,6 @@ fieldset {
 /*RESPONSIVE 1024PX ====================================================================== */
 @media only screen and (max-width: 1024px) {
   /*GENERALES*/
-  .header {
-    height: 52vh; }
-  .titulosH1 {
-    padding-top: 127px; }
   #margen {
     margin-top: 50px;
     padding-left: 0px;
@@ -499,7 +498,7 @@ fieldset {
         font-size: 22px;
         left: 15px; }
       .sectionexcursionesPadre .sectionExcursiones a h3:hover {
-        font-size: 24px; }
+        font-size: 26px; }
       .sectionexcursionesPadre .sectionExcursiones a section {
         width: 300px; }
       .sectionexcursionesPadre .sectionExcursiones .imgExcursionsombra {
@@ -563,6 +562,11 @@ fieldset {
   fieldset {
     margin-bottom: 0px; } }
 
+/*RESPONSIVE DE 892PX A 768PX*/
+@media only screen and (max-width: 892px) and (min-width: 768px) {
+  .titulosH1 {
+    margin-top: 0em; } }
+
 /*RESPONSIVE 768PX ====================================================================== */
 @media only screen and (max-width: 768px) {
   .titulosH1 {
@@ -571,11 +575,9 @@ fieldset {
   .titulosH2 {
     font-size: 20px;
     font-weight: 500;
-    margin: 2px 28px; }
+    margin: 2px 11px; }
   .titulosh3B {
     font-size: 26px; }
-  .header {
-    height: 52vh; }
   /*HOME*/
   #table {
     display: none; }
@@ -639,8 +641,6 @@ fieldset {
 /*RESPONSIVE 411PX ====================================================================== */
 @media only screen and (max-width: 411px) {
   /* GENERALES*/
-  .header {
-    height: 61vh; }
   #margen {
     margin-top: 40px;
     margin-left: 0px; }
@@ -648,8 +648,7 @@ fieldset {
     width: 100%;
     background-color: whitesmoke; }
   .titulosH1 {
-    font-size: 3em;
-    padding-top: 177px; }
+    font-size: 3em; }
   .titulosH2 {
     font-size: 18px; }
   .titulosh3B {
@@ -793,11 +792,9 @@ fieldset {
 /*RESPONSIVE 360PX ====================================================================== */
 @media only screen and (max-width: 360px) {
   /* GENERALES*/
-  .header {
-    height: 50vh; }
   .titulosH1 {
     font-size: 2em;
-    padding-top: 185px; }
+    height: 8em; }
   .titulosH2 {
     font-size: 17px;
     font-weight: 500;
@@ -815,7 +812,7 @@ fieldset {
     #main .sectionexcursionesPadre .sectionExcursiones a h3 {
       font-size: 23px; }
     #main .sectionexcursionesPadre .sectionExcursiones a h3:hover {
-      font-size: 24px; }
+      font-size: 26px; }
     #main .sectionexcursionesPadre .sectionExcursiones a section {
       width: 250px;
       height: 40px; }
@@ -881,8 +878,6 @@ fieldset {
 /*RESPONSIVE 280PX ====================================================================== */
 @media only screen and (max-width: 280px) {
   /*GENERALES*/
-  .header {
-    height: 53vh; }
   #margen {
     margin: 18px;
     padding: 0px; }
@@ -900,7 +895,7 @@ fieldset {
     #main .sectionexcursionesPadre .sectionExcursiones a h3 {
       font-size: 16px; }
     #main .sectionexcursionesPadre .sectionExcursiones a h3:hover {
-      font-size: 17px; }
+      font-size: 19px; }
     #main .sectionexcursionesPadre .sectionExcursiones a section {
       width: 221px;
       height: 36px; }
@@ -914,8 +909,6 @@ fieldset {
     #aside section h3 {
       font-size: 14px; }
     #aside section form input {
-      /*height: 2em;
-                    width: 11em;*/
       height: 2em;
       width: 11em;
       font-size: 17px; }
