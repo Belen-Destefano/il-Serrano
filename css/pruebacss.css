@@ -755,7 +755,7 @@ fieldset {
     margin: 0px 32px; }
     section div .listaBalnearios li {
       list-style-type: none;
-      width: 173px;
+      width: 148px;
       padding: 7px; }
   /*BLOG*/
   body .container {
@@ -854,12 +854,16 @@ fieldset {
     section div .listaBalnearios li {
       width: 173px; }
       section div .listaBalnearios li h3 {
-        font-size: 20 px; }
+        font-size: 20px;
+        text-align: center; }
+      section div .listaBalnearios li a {
+        padding: 0px 25px; }
   /*BLOG*/
   body .container {
     display: none; }
   body #articulosFlex article {
-    width: 277px; }
+    width: 277px;
+    margin-bottom: 0px; }
     body #articulosFlex article div {
       width: 17em; }
       body #articulosFlex article div h2 {
@@ -867,7 +871,8 @@ fieldset {
         text-align: center; }
       body #articulosFlex article div .imgBlog {
         width: 17em;
-        height: 12em; }
+        height: 12em;
+        border: 2px solid #e77e01; }
     body #articulosFlex article div {
       width: 17em; }
       body #articulosFlex article div p {

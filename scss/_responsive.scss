@@ -645,7 +645,7 @@
                 
                 li{
                     list-style-type: none;
-                    width: 173px;
+                    width: 148px;
                     padding: 7px;
                 }
             }
@@ -743,6 +743,7 @@
     }
 
     
+
 
     /*HOME*/  
                    
@@ -846,8 +847,14 @@
                 margin: 0px 7px;
                 li{                    
                     width: 173px;
+        
                     h3{
-                        font-size: 20 px;
+                        font-size: 20px;
+                        text-align: center;
+                    }
+
+                    a {
+                        padding: 0px 25px;
                     }
                 }
             }
@@ -866,6 +873,7 @@
         #articulosFlex {
             article {   
                 width: 277px;
+                margin-bottom: 0px;
                 div {
                     width: 17em;
                     h2{
@@ -879,7 +887,9 @@
                                 
                         width: 17em;
                         height: 12em;
+                        border:2px solid #e77e01 ;   
                     }
+
                 }
 
                 div{
