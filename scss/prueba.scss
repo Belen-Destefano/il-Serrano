@@ -15,6 +15,7 @@
     text-align: center;
     /*esto agrege*/
     height: 6em;
+    margin-bottom: 0%;
 }
 
 .titulosH2 {     
@@ -130,6 +131,7 @@ p {
 
                 font-size: 40px;
                 font-weight: 500 ;
+                transition: all  0.1s ease-in-out;
             }
 
             h3:hover{
@@ -261,7 +263,9 @@ aside {
 
 /*PAGE TURISMO*/
 
-
+.card{
+    transition: all  0.1s ease-in-out;
+}
 
 .card:hover{
     background-color: rgba(56, 56, 56, 0.048);
@@ -295,9 +299,11 @@ aside {
                     border-radius: 10px; 
                     width: 368px; 
                     height: 240px;
+                    transition: all  0.3s ease-in-out;
                 }
                 img:hover{
-                    box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.425);
+                    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.425);
+              
                 }
 
                 p {
@@ -319,10 +325,13 @@ aside {
     height: 15em;
     width: 21em;
     border-radius: 10px; 
+
+    transition: all  0.3s ease-in-out;
 }
 
 .imgClimaybalnearios:hover {
     box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.425);
+    transform: scale(1.05);
 }
 
 
@@ -384,59 +393,68 @@ section {
 }
 
 #microclima{ 
-    animation-name: microclimaAnimacion;
-    
-    animation-iteration-count: infinite;
-
-    animation-timing-function: linear; 
-
-    animation-duration: 2s;
-
-    animation-delay: 1s;
-
+    cursor: context-menu;
     height: 50px; 
+    text-align: center;
 }
 
 /*ANIMACION DE H2*/
-@keyframes microclimaAnimacion {
-    0% {
-        color: #551400;
 
-        font-family: 'Roboto', sans-serif;
-        font-size: 32px;
-        font-weight: 400 ;
-        
-
-        text-align: left;
-    }
-
-    20% { 
-        font-size: 34px;
-        font-weight: 450 ;
-        color: rgb(109, 74, 9);
-    }
-
-    40% {
-        font-size: 36px;
-        font-weight: 450 ;
-        color: #e77e01;
-    }
-
-    60% {
-        font-size: 34px;
-        font-weight: 450 ;
-        color: rgb(109, 74, 9);
-    }
-
-    100% {
-       
-        font-size: 32px;
-        font-weight: 450 ;
-        color: #551400;
-    }
-
+#microclima:hover{
+    animation-name: microclimaAnimacion;
     
+    // animation-iteration-count: infinite;
+
+    animation-timing-function: linear; 
+
+    animation-duration: 3s;
+
+    // animation-delay: 1s;
+
+    height: 50px; 
+    text-align: center;
 }
+
+
+    @keyframes microclimaAnimacion {
+        0% {
+            color: #551400;
+
+            font-family: 'Roboto', sans-serif;
+            font-size: 32px;
+            font-weight: 400 ;
+            
+
+            text-align: center;
+        }
+
+        20% { 
+            font-size: 34px;
+            font-weight: 450 ;
+            color: rgb(109, 74, 9);
+        }
+
+        40% {
+            font-size: 36px;
+            font-weight: 450 ;
+            color: #e77e01;
+        }
+
+        60% {
+            font-size: 34px;
+            font-weight: 450 ;
+            color: rgb(109, 74, 9);
+        }
+
+        100% {
+        
+            font-size: 32px;
+            font-weight: 450 ;
+            color: #551400;
+        }
+
+        
+    }
 
 /*PAGE BLOG*/
 
@@ -471,12 +489,22 @@ article {
             border-radius: 10px;    
             width: 50em; 
             height: 30em;
+
+
+            transition: all  0.3s ease-in-out;
         }
         
+        
+
         .imgBlog:hover {              
-            border:3px solid #e77e01 ;         
+            // box-shadow: 1px 1px 20px rgba(14, 14, 14, 0.79);
+
+            box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.425);
+            transform: scale(1.05);
         }
     }
+
+    
 
     div {
         p{
@@ -493,17 +521,27 @@ article {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    background-image: url(../images/blog33.jpg);
+    background-attachment: fixed;
     
 }
 
-#interesado {
-    color: #e77e01 ;
+form{
+    margin: 3% 0%;
+    #interesado {
+        color: #e77e01;
+        /* margin-top: 20px; */
+        width: 61%;
+        margin: 20px 0px;
+        display: inline;
+    }
 }
 
 fieldset {
     background: white;
  
-    box-shadow: -2px 1px 11px rgb(0 0 0 / 43%);
+    box-shadow: -2px 1px 11px rgba(14, 14, 14, 0.43);
 
     padding: 5%;
    
@@ -512,12 +550,16 @@ fieldset {
         margin-bottom: 50px;
         /* width: 68%; */
         display: inline-block;
+        text-align: center;
     }
 
-    form {
-        margin: 3%;
-        width: 39%;
+    form{
+        p{
+            margin: 11px 0px ;
+        }
     }
+
+    
 
 }
 

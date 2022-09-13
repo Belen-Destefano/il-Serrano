@@ -118,7 +118,8 @@ section .h2Error {
   padding-top: 195px;
   text-align: center;
   /*esto agrege*/
-  height: 6em; }
+  height: 6em;
+  margin-bottom: 0%; }
 
 .titulosH2 {
   font-family: 'Roboto', sans-serif;
@@ -198,7 +199,8 @@ p {
       letter-spacing: 5px;
       z-index: 2;
       font-size: 40px;
-      font-weight: 500; }
+      font-weight: 500;
+      transition: all  0.1s ease-in-out; }
     .sectionexcursionesPadre .sectionExcursiones a h3:hover {
       font-size: 43px;
       font-weight: 500; }
@@ -265,6 +267,9 @@ aside {
     color: #551400; }
 
 /*PAGE TURISMO*/
+.card {
+  transition: all  0.1s ease-in-out; }
+
 .card:hover {
   background-color: rgba(56, 56, 56, 0.048);
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.116); }
@@ -286,9 +291,10 @@ aside {
         .sectionTurismo section .paseos div img {
           border-radius: 10px;
           width: 368px;
-          height: 240px; }
+          height: 240px;
+          transition: all  0.3s ease-in-out; }
         .sectionTurismo section .paseos div img:hover {
-          box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.425); }
+          box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.425); }
         .sectionTurismo section .paseos div p {
           width: 20em;
           margin-top: 20px;
@@ -298,10 +304,12 @@ aside {
 .imgClimaybalnearios {
   height: 15em;
   width: 21em;
-  border-radius: 10px; }
+  border-radius: 10px;
+  transition: all  0.3s ease-in-out; }
 
 .imgClimaybalnearios:hover {
-  box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.425); }
+  box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.425);
+  transform: scale(1.05); }
 
 section div .listaBalnearios {
   padding: 19px 81px;
@@ -340,21 +348,25 @@ section div .listaBalnearios {
   flex-direction: column; }
 
 #microclima {
-  animation-name: microclimaAnimacion;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-duration: 2s;
-  animation-delay: 1s;
-  height: 50px; }
+  cursor: context-menu;
+  height: 50px;
+  text-align: center; }
 
 /*ANIMACION DE H2*/
+#microclima:hover {
+  animation-name: microclimaAnimacion;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  height: 50px;
+  text-align: center; }
+
 @keyframes microclimaAnimacion {
   0% {
     color: #551400;
     font-family: 'Roboto', sans-serif;
     font-size: 32px;
     font-weight: 400;
-    text-align: left; }
+    text-align: center; }
   20% {
     font-size: 34px;
     font-weight: 450;
@@ -395,9 +407,11 @@ article {
     padding: 0px;
     border-radius: 10px;
     width: 50em;
-    height: 30em; }
+    height: 30em;
+    transition: all  0.3s ease-in-out; }
   article div .imgBlog:hover {
-    border: 3px solid #e77e01; }
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.425);
+    transform: scale(1.05); }
   article div p {
     text-align: center;
     width: 48em; }
@@ -405,29 +419,41 @@ article {
 /*PAGE CONTACTO*/
 #contactoFlex {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../images/blog33.jpg);
+  background-attachment: fixed; }
 
-#interesado {
-  color: #e77e01; }
+form {
+  margin: 3% 0%; }
+  form #interesado {
+    color: #e77e01;
+    /* margin-top: 20px; */
+    width: 61%;
+    margin: 20px 0px;
+    display: inline; }
 
 fieldset {
-  /*gradiente*/
   background: white;
-  background: linear-gradient(82deg, white 0%, rgba(140, 146, 147, 0.286152) 100%);
-  box-shadow: -2px 1px 11px rgba(0, 0, 0, 0.425);
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 30px; }
+  box-shadow: -2px 1px 11px rgba(14, 14, 14, 0.43);
+  padding: 5%; }
   fieldset legend {
     margin-top: 30px;
-    margin-bottom: 50px; }
-  fieldset form {
-    margin-top: 30px;
-    margin-bottom: 20px; }
+    margin-bottom: 50px;
+    /* width: 68%; */
+    display: inline-block;
+    text-align: center; }
+  fieldset form p {
+    margin: 11px 0px; }
 
 /*RESPONSIVE 1200PX ====================================================================== */
 @media only screen and (max-width: 1200px) and (min-width: 412px) {
   /*HOME*/
+  .header {
+    height: 43vh; }
+  .titulosH1 {
+    font-size: 40px !important;
+    padding-top: 215px !important; }
   .sectionexcursionesPadre {
     display: flex;
     flex-direction: row;
@@ -461,7 +487,9 @@ fieldset {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around; } }
+    justify-content: space-around; }
+  #contactoFlex form {
+    margin: 13% 5%; } }
 
 /*RESPONSIVE 1024PX ====================================================================== */
 @media only screen and (max-width: 1024px) {
@@ -642,7 +670,7 @@ fieldset {
 @media only screen and (max-width: 411px) {
   /* GENERALES*/
   #margen {
-    margin-top: 40px;
+    margin-top: 8px;
     margin-left: 0px; }
   #body {
     width: 100%;
@@ -793,8 +821,9 @@ fieldset {
 @media only screen and (max-width: 360px) {
   /* GENERALES*/
   .titulosH1 {
-    font-size: 2em;
-    height: 8em; }
+    font-size: 32px;
+    padding-top: 188px;
+    height: 10em; }
   .titulosH2 {
     font-size: 17px;
     font-weight: 500;

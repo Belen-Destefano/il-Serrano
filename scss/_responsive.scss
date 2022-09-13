@@ -4,6 +4,15 @@
 
     /*HOME*/
 
+    .header {
+        height: 43vh;
+    }
+
+    .titulosH1 {
+        font-size: 40px !important;
+        padding-top: 215px !important;
+    }
+
     .sectionexcursionesPadre{
         display: flex;
         flex-direction: row;
@@ -74,6 +83,15 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+
+    // CONTACTO
+    #contactoFlex{
+   
+        form {
+            margin: 13% 5%;
+        }
+        
     }
 }
 
@@ -440,8 +458,8 @@
 
    
     #margen{
-        margin-top:  40px;
-        margin-left:  0px;
+        margin-top: 8px;
+        margin-left: 0px;
     }     
     
     #body {
@@ -714,13 +732,15 @@
 
 /*RESPONSIVE 360PX ====================================================================== */
 
+
 @media only screen and (max-width: 360px) {
 
     /* GENERALES*/
 
     .titulosH1 {
-      font-size: 2em;   
-      height: 8em;
+        font-size: 32px;
+        padding-top: 188px;
+        height: 10em;
     }
 
     .titulosH2 {
