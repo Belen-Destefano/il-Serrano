@@ -492,6 +492,7 @@ article {
 #contactoFlex {
     display: flex;
     flex-direction: column;
+    align-items: center;
     
 }
 
@@ -500,23 +501,22 @@ article {
 }
 
 fieldset {
-    /*gradiente*/
-    background: rgb(255,255,255);
-    background: linear-gradient(82deg, rgba(255,255,255,1) 0%, rgba(140,146,147,0.2861519607843137) 100%);
-    box-shadow: -2px 1px 11px rgba(0, 0, 0, 0.425);
+    background: white;
+ 
+    box-shadow: -2px 1px 11px rgb(0 0 0 / 43%);
 
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 30px;
+    padding: 5%;
    
     legend {
         margin-top: 30px;
         margin-bottom: 50px;
+        /* width: 68%; */
+        display: inline-block;
     }
 
     form {
-        margin-top: 30px;
-        margin-bottom: 20px;
+        margin: 3%;
+        width: 39%;
     }
 
 }
